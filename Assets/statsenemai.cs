@@ -3,12 +3,14 @@ using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UI;
+using static UnityEngine.ParticleSystem;
 
 public class statsenemai : MonoBehaviour
 {
     public float videl;
     public Image barrita;
     public float hptotall;
+    public GameObject efectoparticular;
 
     public void Start()
     {
@@ -17,6 +19,7 @@ public class statsenemai : MonoBehaviour
 
     public void Recibidamage(float damaje)
     {
+        Instantiate(efectoparticular, transform.position, Quaternion.identity);
         videl -= damaje;
         ActualizaBarrita();
         if (videl <= 0)
