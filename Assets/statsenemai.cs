@@ -5,7 +5,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using static UnityEngine.ParticleSystem;
 
-public class statsenemai : MonoBehaviour
+public class Statsenemai : MonoBehaviour
 {
     public float videl;
     public Image barrita;

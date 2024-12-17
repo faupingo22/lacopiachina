@@ -14,7 +14,7 @@ public class bulletp : MonoBehaviour
     {
         if (other.gameObject.CompareTag("enemai"))
         {            
-            statsenemai enemy = other.GetComponent<statsenemai>();
+            Statsenemai enemy = other.GetComponent<Statsenemai>();
             enemy.Recibidamage(damaje);
             Destroy(gameObject);
         }
